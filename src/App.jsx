@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import TodoCard from "./components/TodoCard";
 
 function App() {
@@ -22,6 +22,10 @@ function App() {
     updatedTasks[index].completed = !updatedTasks[index].completed;
     setTasks(updatedTasks);
   };
+  useEffect(() => {
+  localStorage.setItem("myTasks", JSON.stringify(tasks));
+}, [tasks]);
+
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-purple-500 to-indigo-600 flex justify-center items-center">
