@@ -29,7 +29,7 @@ function App() {
       <div className="bg-gray-100 p-8 rounded-2xl shadow-2xl w-full max-w-md">
 
         <h1 className="text-3xl font-bold text-center text-purple-700 mb-6">
-          ✨ My Smart ToDo
+           My Smart ToDo
         </h1>
 
         <div className="flex gap-2 mb-6">
