@@ -27,6 +27,7 @@ function App() {
 }, [tasks]);
 
 
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-purple-500 to-indigo-600 flex justify-center items-center">
       
